@@ -1,0 +1,2215 @@
+Features of Python
+---------------
+1.Simple and easy to leran
+2.Freeware and opensource
+3.Hight level programmer language
+4.Platform independent
+5.portable
+6.Dynamically typed
+7.Both Procedurecs oriented and Object Oritened 
+8.Interpreted
+9.Extennsible
+10.Embedded
+11.Extensive libry
+
+Limitations of Python
+-----------------------
+1.Performance wise -interpreted line by line
+2.Mobile applcations
+
+Myth:
+Python not suitable for large scale enterprice application
+
+Flavors of Python:
+--------------
+1.Cpython.
+2.Jython or Jphython
+3.IronPython
+4.Pypy ======>PVM ==>JIT
+5.RubyPython
+6.AnacondaPython
+7.Stackless(Python for concurrency)
+
+Python Version
+--------------------
+1.python 1.0 intro Jan 1994
+2.python 2.0 intro OCT 2000
+3.python 3.0 intro Dec 2008
+Identifiers:
+------------
+Varible name, class and methods ...know as Indentifiers.
+Rules to defines in Python:
+----------------------
+1.Alphabet symbols (upper case and lower case)-digits(0 to 9)
+underscore (_) can use
+2.Identifer should not start with digit
+3.case sntisitive language
+Total=10,
+TOTAL=10
+4.keyword not allowed 
+5.there is no lenght limit of python identifiers..
+  Not recommanded to use lengthy 
+6.$ symbol not allowed 
+
+
+Reserved Words
+-------------------
+33 reserved words in python
+
+True,False,None
+and,or,not,is
+if,else,elif
+while,for,break,continue,return,in,yield
+try,except,finally,raise,assert
+import,from,as,class,def,pass,global,nonlocal,lambda,del,with
+
+DATA Type
+------------------------
+int,
+float
+complex,
+bool,
+str,
+bytes,
+bytearray,
+range,
+list,
+tuple,
+set,
+frozenset,
+dict,
+None
+
+Note:
+In python everything is object.
+
+Python provide some inbuilt functions:
+
+print() - print the value of object
+type() - type of object
+id() - address of object
+
+1.int:
+--------
+integral values
+10   20    30
+100000000
+
+a=10
+type(a)
+--10
+
+Type int object
+1.Decimal (BAse-10) 0 to 9    a=7878 
+2.Binary- (Base-2) 0 and 1    a=0b111 print(a) - 15
+3.Octal,- (Base-8) 0 to 8     a=0o777 print(a) - 511
+4.Hexa Decimal(Base-16) 0 to 9 and a to f or A TO F
+                              a=0xFace print(a) -64206
+
+Base Conversions
+-------------------------
+To convert there respecting forms 
+bin() 
+oct()
+hex()
+
+Float data type
+----------------
+F=123.1245 print(F) - > 123.1245
+
+Floating point values binary,octtal and hexadecimal not allowed
+
+Expontial form..allowed
+---------------
+f=1.2e3 f ->1200
+
+Complex Data type
+------------------
+a+bj
+a=real part - any form
+b=Imaginary part -only decimal
+j=j 2=-1
+
+Example:
+x=10+20j
+x.real -> 
+x.imag
+
+bool data type
+----------------
+True and False - T and F caplital letter.
+
+True represent of 1 and False 0
+Example-
+
+True+True=>2
+True+False=>1
+
+str data type
+----------------
+'durga' and "durag" ...  accept both single code and double code
+
+Python always follow single code ..
+
+a="Durga" -> 'Durga'
+
+#For multiple lines ''' RAM 
+                             kumar'''
+    Used triple single code or triple double code
+
+slice opertor
+-----------
+s[2:5]
+
+
+Two form of complex funtions
+Form-1:Complex(x)==>x+0j
+Form-2:Complex(x,y)==>x+yj
+
+
+#We can use complex function to convert anytype..but we shuoul be pass int or float and bool
+#bool - can convert any value postive values should return True and zero false
+#str - anytype of data type you convert using single quote or double qutoe
+
+
+Immutable Vs Fundmental Data Type
+--------------------------------
+
+
+bytes data type:-
+-----------------
+A group of values
+
+x=[10,20,30.40}
+b=bytes(x)
+type(b)
+
+How to access  ararry element:
+b[1]=10
+b[-1]=40
+
+
+it represent a group of bytes number just like an array.
+1.bytes  data type range 0 to 256
+2.bytes data type immutable
+
+bytearray ==> both are same
+1.bytearry mutable
+list data type
+--------------
+insertion order is presered and duplicates are allowed
+
+l=[]
+type(l)
+...list type
+
+#Hetogoues object allowed 
+#list groable -can increse and decrese
+
+Example:
+==> l=[]
+    l.append(10)
+    l.append(20)
+    l.append(40)
+    l.append("durga")
+    l.append(None)
+#order
+#Duplicates
+#heterogeneous
+#growabble
+#values should be enclosed wth []
+
+
+tuple data type
+-----------------
+immutable 
+t=(10,20,30)
+
+with parathisies..()
+
+t=(10,30,[10,56])
+3 values
+range() data type;
+----------------
+
+# to represent sequence of values ..
+# immutable
+
+Form-1: range(10)
+it represents values from 0 to 9(end-1)
+
+Example:
+r=range(10)
+for i in r:print(i)
+1
+2
+...
+
+From 2:- number represet to 10 to 29
+range(10,30) - to represet number from 10 to 29
+
+Form 3:- range(10,50,5) ... take increment by 5 or multiple of 5
+r=range(10,50,5)
+for i in r: print(i)
+5
+10..
+45.
+
+it is applicable on int not other data type
+
+set data type
+=============
+#duplicate not allowed
+#order not presered
+#indexing and slicing not appliacable in the set
+#heterogence allowed
+#increaing and decrese the values
+
+
+frozanset set datatype
+------------------
+
+#it is same as set only diferent it is mutable
+#not allowed add and remove values
+
+
+dict data type
+------------------
+dictionary .. key -> values
+
+if you want to present group of object in form of key -values prais
+# duplicate are not allowed keys
+# values duplicates are allowed
+# {} by it
+
+d={1:"a",2:"b",3:"c",4:"f"}
+
+# by default {} dictionary only
+# immutable
+# if you trying to add dupicate keys.. it will replace value
+
+---------------------------------------------
+1.which data type call fundametal data type?
+#int, float, complex, bool, str
+
+2. bytes - immutable and bytearray - mutable
+   to represent binary data, image , vedio data.
+
+3.long data type only available in python 2 not in 3
+   for big number you can use int
+
+4.there is no char data type we can str for both string or char
+  it have triple quote symbol and double quote symbol
+
+-----------------------------------------------------
+
+None data type
+--------------
+
+not return values by function-then use None
+
+pass keyword
+-----------
+to handle condtion and pass ... if nothing is to written
+
+
+Escape charactor
+----------------------
+s="dugra\nsoft"
+s
+durga\soft
+print(s)
+durga 
+soft
+
+\n
+\t
+\r
+\r
+\b
+\f
+\'
+\"
+\\
+\v
+
+
+Exa:
+
+constants:
+----------
+
+ x=10
+
+there is no way to define constants
+
+
+Operator
+--------
+
+1.Arithemtic Operator
+2.Relational or Comparison Opertors
+3.Logical 
+4.Bitwise
+5.Assigment 
+6.Special
+
+--------------------
+
+1.Arithemtic opertor
++ ==> Addition -it is appliacble on str as well considered as concantation operator
+- ==> subtraction
+* ==> mutipltion
+/ ==> Division -always genarate float values
+% ==> Modulo
+
+// ==> Floor Division Operator -it will return int or float both
+** ==> Exponent Opertor or Power Opertor
+
+#- Comments
+
+a=10
+b=2
+a**b=100
+a//b=5
+
+a=10.5
+b=2
+
+a/b=5.25
+a//b=5
+
+----
+
+'durga'+3
+==> error come
+both should be string 
+'durga'+'3'
+----
+'durga'*3 ////'durga'*3.0 --- float is not applicable
+3*'durga'
+==>durgadurgadurga
+
+'durga'*'3'
+==> error will come.. once arugument should be string and another wil int
+
+
+------------------------
+x/0
+x%0   ---devision by zero erroe will come
+x//0
+---------------------------------
+10**0 - value always 1
+
+--------------------
+Relational Operators:
+-------------------
+>,>=,<,<=
+
+We can apply reltional opertor on str
+a='durga'
+b='ravi'
+===>a>b --> Fales -- because of alphbetical order
+
+10<20<30<40 ===> True
+chaining codition
+
+Equality Operator
+-----------------
+== and !=
+
+True==True ==>True
+10>True ===> True
+
+
+'durga'=='durga' ==>True
+
+10==20==30==40  ==>False
+
+10==5+2==5*2==3+7  ==>Ture
+
+Logical Operator
+-----------------
+and==> if booth arguments are ture then only true
+or=> if atlest one aruments is true then true
+not
+
+None boolean type:
+
+0 means false
+non-zer o menas true
+empty string false
+
+#x and y:if x evalutes to false then result is x otherwise returns y
+
+x=10
+y=20
+
+x and y ==> True
+
+0 and 'durga' ==> 0
+
+#x or y:if x evalutes to True then retunrs x therwise return y
+
+10 or 20 ==>10
+
+0 or 20 ==> 0
+
+#not x:
+
+not 10==> False
+
+not ''==> True
+
+not 0 ==> Ture
+
+10 or 10/0 ==>10
+
+
+Bitwise operators
+-----------------
+&
+|
+^
+~
+<<
+>>
+
+IT is can be appliable for int and boolean
+
+# 4&5==>
+
+True 
+100 -4
+101 -5
+001
+
+
+&==> if both bit ae 1 then only 1 otherwise 0
+#4&5==> 4
+|==> if atleast one bit is 1 then 1 otherwsie 0
+#4|5==>5
+^==>x-or==> if both bit are differnet then 1 otherwsie 0
+#4^5==>1
+~==> bitwise complement operator
+1==>0 and 0===>1
+#~4 ==>-5
+
+
+Shift Opertor:-
+
+<<====>bitwise left shift -- right hand side vacant cells fil with 0s
+10<<2==>40
+
+>>====> bitwise right shift -- left hand side vacant cells sign bit 1s
++ve number ====>0
+-ve number ===> 1
+10>>2==>2
+
+Assigment operators
+-------------------
+x=10
+x,y,z=10,20,40
+
+Compound assigment operators:
+--------------------------
++=
+-=
+*=
+/=
+%=
+//=
+**=
+&=
+|=
+^=
+>>=
+>>=
+
+Ternary Operator
+---------------------
+?:
+x=30 if 10 < 20 else 40
+x===>30
+
+a=int(input("enter first value"))
+b=int(input("enter second value"))
+
+
+min= a if a<b else b
+min
+
+Special Opertor
+===============
+
+1.Identity Opertor
+- To compare address we used Identity opertor
+a=10
+b=10
+
+a is b => true
+a is not b=> false
+
+2.Membership Operator
+======================
+in---
+list1=[10,20,30]
+print(10 in list1) ===>True
+
+not in
+print(70 not in list1) ===>True*
+
+Opertor Precedence
+-----------------------
+
+() ---> Paranthsis -Highest priotry
+**====> exponentil operator
+~,- unary operotr
+*,/,%,//
++,-
+<<,>>
+&
+^
+|
+>,>=,<,<=,==,!=
+=,+=,-=,
+
+
+
+
+a,b,c,d=30,20,10,5
+
+print((a+b)*c/d) #100
+print((a+b)*(c/d)) #100
+
+unary ~x
+binary opertors x+y
+ternary opertors 3 arguments
+
+
+a=10+2/3-4*5
+libraries#
+---------
+
+module==> a group of functions, variables, classes
+
+math module#
+import math
+print(math.sqrt(16))
+print(math.pi)
+
+
+aliasing
+import math as m
+
+from math import pi
+print(pi)
+
+from math import *
+print(pi)
+
+squrt()
+ceil()
+floor()
+pow(x,y)
+factoril()
+gcd()
+sin()
+cos()
+
+....
+
+
+pi =3.14
+e=2.71
+inf=infinity
+nan=not a number
+
+print area of circle
+..................
+
+from math import *
+r=int(input("enter Radius:"))
+aera=pi*r**2
+print("Aera of circle: "area)
+
+import math -  need to use math... like math.pi
+
+
+
+Input and Output statements:
+------------------------------
+#Read the dynamic data from keyborad :
+
+it was in python2
+-x=raw_input("Enter some number") ---  always treated as a String only
+we required to use typecating functions
+
+-y=input("Enter some number")
+  not considered as str type what every type provided
+we are not required typcasting
+
+python#3
+------------
+
+x=input("Enter some number: ")
+need typecasting 
+x=int(input("enter some number")
+
+---------------------------
+
+a,b=[int(x) for x in input("enter 2 number:").split()]
+print("The Prodcut :",a*b)
+
+-----------------------
+
+eval()
+--------
+
+#calculate an expression
+
+ex=input("enter some expression")
+result=eval(ex)
+print(result)
+
+
+#to konw the type of input 
+ex=eval("enter the data")
+print(ex)
+
+
+
+a,b,c=[eval(x) for x in input("enter 3 number:").split(',')]
+print(type(a))
+.....
+.....
+
+Command Line Arguments
+----------------------
+ py test.py 10 20 30 40 
+ argv = this variable hold all command line values
+ argv==> list type
+ argv ==> belongs to sys module
+ from sys import argv
+ print(argv) ==> ['test.py','10','20'] 
+ print(argv[1:])==>['10','20','30']
+ print(argv[1]) ==>['10']
+ print(len(argv)) ==>4
+
+{} =====>replacement opertor
+
+output opertor
+------------------
+1.print()
+2.print("durga")
+3.print(10,sep(''))
+4.print(10,end())) 
+
+
+
+Flow Control
+---------------
+3 type
+
+1.Condtionl statement/section statemntt
+
+if
+if else
+if elif else
+
+2.Iterative statement
+------------------
+for loop
+while
+
+3.Tranfer statement
+-------------------
+break
+continue
+pass
+
+=====================================================================
+1.Selection Statement and condition statements
+------------------------------------------
+
+if statements
+-------------
+
+Sytnex:
+
+#if condition:
+   system.out.print(x)
+   system.out.print(x)
+   system.out.print(x)
+
+Example:
+name=input("enter name")
+if name=="durga":
+   print("Hello Durga Good Monring")
+print("How are you")
+
+# if x:
+     action :1
+  else:
+     action :2
+
+Example:
+name=input("enter name")
+if name=="durga":
+   print("Hello Durga Good Monring")
+else:
+   print("Hello Guest Good Morning")
+print("How are you")
+
+#Is else part mandotory or optional? Optional
+  
+#if-elif-else
+
+#if x:
+    action:1
+ elif x:
+    action :2
+  else:
+     action :3
+
+Example:
+
+if brand=="A":
+   print("Hello A Good Monring")
+elif brand=="B":
+   print("Hello B Good Morning")
+elif brand=="C":
+   print("Hello C Good Morning")
+elif brand=="D":
+   print("Hello D Good Morning")
+elif brand=="E":
+   print("Hello E Good Morning")
+else:
+   print("Hello")
+print("How are you")
+
+----------------------
+#Read two number from command pront and find biggest number
+x=int(input("enter first number")
+y=int(input("enter second number")
+if x>y:
+   print("Print X",x)
+else:
+   print("Print Y",y)
+
+#Read three number from command pront and find biggest number
+x=eval(input("enter first number")
+y=eval(input("enter second number")
+z=eval(input("enter thried number")
+if x>y and x>z:
+   print("Print X",x)
+elif y>z:
+   print("Print Y",y)
+else:
+   print("Print z",z)
+---------------------------------
+Write a program to check whther given number is in between 1 and 100 not.
+n=int(input("enter number")
+if n>=1 and n<=100:
+   print("Print n",n)
+else:
+   print("number not in between")
+
+-----
+some digit from the keyboard
+0===>Zero
+1===>one
+...
+..
+upto 10
+
+
+
+n=int(input("enter number "))
+if n==0:
+   print("Zero")
+elif n==1:
+   print("one")
+elif n==2:
+   print("two)
+else:
+   print("please enter number 1 to 2 only")
+
+
+-------------------------------
+Iterative statement:
+------------------
+loops:
+
+for loop
+while
+
+for loop:
+---------
+for eachelemt in sequence:
+    do some action
+
+where sequenc:- string, list, numbers, set, dict ,tuple
+
+------------------------------
+s="Sunny Loene"
+count=0
+for x in s:
+    count+=1
+    print(x)
+print("Total charator count",count)
+----------------------------------------
+l=[10,20,30,40]
+for x in l:
+    print(x)
+
+-------------------------------------------
+++ and -- not allowed in python
+----------------------------------------
+Print Hello 10 times
+
+for x in range(10):
+      print("Hello")
+
+-----------------------------------
+
+for x in range(21):
+    if x%2!=0:
+       print(x)
+
+--------------------------------------
+
+while loop
+-----------
+iteration don't in advance
+...
+
+while condition:
+    body
+
+Example:
+1 to 10 using while loop
+
+x=1
+while x<=10:
+     print(x)
+     x+=1
+-----------
+sume of first n number
+x=int(input("x")
+i=1
+sum=0
+while i<=x:
+     sum+=i
+     i+=1 
+print(sum)
+--------------------
+some names from the keys word if name duraga thanks again ask name
+
+while name!='durga':
+      name=input("Enter Name")
+print("Hello durag tahnsk for cofirmation")
+
+
+---------------------------
+
+Infinite Loops
+------------------
+i=0
+while Ture
+  i=i+1
+  print("Hello:",i)
+--------------------
+Nested Loops:
+-------------
+Loop inside loop konw as nested loop
+
+Example
+for i in range(4):
+   for j in range(4):
+       print(i)
+
+----------------
+for i in range(4):
+    for j in range(4):
+        print("i={} and j={}".format(i,j))
+-----------------------
+the number of row:4
+*
+**
+***
+****
+
+n=int(input("enter the number of rows")
+for i in range(1,n+1):
+     for j in range(1,i+1):
+     print("*",end="")
+     print()
+-----------------------
+ n=int(input("enter number"))
+ for i in range(1,n+1):
+    print("* "*i)
+------------------
+*****
+****
+***
+**
+*
+
+n=int(input("enter number")
+for i in range(5):
+   for j range(i):
+      print("*"*i)
+   print()
+-----------------------
+
+---------------------------
+*
+
+**
+**
+
+***
+***
+***
+
+n=int(input("enter numer"))
+for i in range(n):
+    print('*") 
+-------------------------------
+
+break Statement
+----------------
+
+numbers={10,0,20,30}
+for n in numbers:
+    if n==0:
+       print("Zero deveied by ")
+       continue  
+    print("100/{}={}".foramt(n,100/n))
+
+------------------------------
+for-else
+while-else                     # we can use else 
+try-except-else-finally
+------------------------
+loop(while or for loop)
+     statement 1
+     statement 2
+      ..........
+     ...........
+else:
+  print("else")
+---------------------
+else means loop without break.
+---------------
+cart =[10,20,500]
+for items in cart:
+    if item>500:
+         print()
+    break
+    else:
+         prrint()
+else:
+    print()
+----------------------
+Q.for loop and while loop?
+#execute body for every item in the given sequence ===>
+for x in range(10):
+body
+
+
+#execute body as long as some condition is true===> while
+
+while condtion
+ body
+
+#How to exit from the loop?
+--break
+
+#How to skip current iteration and contine for the next 
+ using contine
+
+-------------------------------------
+pass statement
+--------------
+pass is a keyword in python
+
+if True:pass
+else:
+    print("Hello")
+
+pass:
+----
+1.It is empty statement
+2.
+
+
+def f1():
+    print()
+def f2():
+    print()
+
+--------------------
+del x ===> free the object
+
+x,y=10,20
+del x
+y=None
+print(x)
+
+Will get error name x not defined
+---------------------------------
+
+s1='durga'
+s2='durga'
+s3='durga'
+print(id(s1),id(s2),id(s3))
+del(s1)
+print(s2)
+print(s3)
+
+in this case variabe will delete remainig will stay
+#durga
+#durga
+
+-------------------------------
+
+wecann't use del keyword function call
+----------------------------------------
+
+------------------------------------------------------
+for i in range(100):
+     if i%10=0
+       print(i)
+
+pass:- empty block conidered as pass like abstract method in the Java
+
+--------------------------------------------------------
+del - it is used to delete the variable
+
+s1='durga'
+s2='ravi'
+....
+.....
+
+-------------------------------
+difference in between del and None
+-----------
+x=10
+y=20
+del x
+y=None
+print(y)=========>None
+---------------------------------
+x='Durga'
+y='Durga'
+z='Durga'
+
+del(x)
+print(y)
+print(z)
+===> Durga
+     Durga
+
+-----------------------------
+
+
+String Data Type:
+--------------------
+Any sequence of charactor in single or double code.. is String..
+
+Note:
+ch='a'
+--------------------------------------------
+#There is no char data type in the python.
+--------------------------------------------
+
+#multi line string literal we can able to take.
+-----------------------
+triple quotes we can define multi line string literls
+'''durga'''
+"""durga"""
+---------------------------
+How to access charactor of String?
+by using index
+by using slice operator
+
+By index:-
+------
+s='durga'
+print(s[0])
+print(-1)
+d
+a
+--------------
+-5-4-3-2-1
+d u r g a
+0 1 2 3 4   Get both side idex values
+----------------------
+write the program to accept some string from the keyword and print all charactor with index...
+
+The charactor at +ve index 0 and -ve index -5 is d
+
+-5-4-3-2-1
+d u r g a
+0 1 2 3 4   Get both side idex values
+
+
+
+s=input("Enter string")
+i=0
+for x in s:
+    print("the charchtor present in postive index{} and at negative index{} is:{}".format(i,len(s)-i)
+
+2.By using slice operator:-
+------------------------
+#step value can be either +ve or -ve
+#if +ve then it should be foward direction(left to right)
+# if -ve then it should be backward direction(Right to left)
+
+if +ve  forward fdirection frombegain to end 1
+if -ve backward diecrtion from begain to end +1
+
+In forward direction
+---------------------
+default value for begin:0
+default value for end:length of the string
+default value for step:1
+
+In backward direction
+---------------------
+default value for begin:-1
+default value for end:-(length of the string+1)
+
+
+s[beginindex:endindex:step]
+s[0123456789]
+s[0:7:1]
+0123456
+s[0:7:2]
+0246
+s[::]
+0123456789
+s[2:8:1]
+-2 to 7
+s[2:8:-1]
+-'' =Empty
+s[2:8:0] ===> error : step cannot be zero
+s[-1:-6:-1]
+---98765
+s[2:-5:1]
+---234
+s[1:6:-2]
+--'' --empty string
+
+s[0:-5:-5]
+---'' -- empty string
+
+from begain index to end -1 index and increament by 1
+
+
+-----s[:0:-1]
+
+===>987654321
+
+
+-----s[-5:0:-9]
+'5'
+------------------------------------------------
+
+
+
+
+
+
+
+
+Msthemeticsl opertors in String:
+-----------------------------------
++(plus) -> concatation of string 
+# if you apply + opertor ..then both should be string only... otherwise you will get error.
+'durga'+'soft'===>dugrasoft
+'durga'+10 ===> error .. must be string type
+
+*(star) -> String repeatition opertor
+# id you apply * opertor .. then one should be string and other should be number
+'durga'*2==>durgadurga
+2*'durga'===>durgadurga
+
+
+Q.How many charactor present in the string?
+----------------------------------------
+s='durga'
+len(s)
+
+Q.WAP to access each charactor in forwar direction and backward drieection?
+-----------------------------------------------------------------------------
+s[:] ===> forward direction
+s[::-1] ===> backward direction
+
+use while loop:
+
+s=input("enter string")
+n=len(s)
+i=0
+print("DATA in foreward Direction")
+while i<n:
+    print(s[i],end="")
+    i+=1 
+print("DATA in backward Direction")
+i=n-1
+while i>=0
+     print(s[i],end="") 
+     i=i-1
+Q.WAP to reverse the string?
+Q.WAP to remove dupicate string?
+Q.WAP to each charator how many times it is presenting?
+Q.WAP if i provide Durga Software solution 
+     then reserved agruD erawtfoS noituloS
+
+Membership Operator:
+--------------------
+in and not in 
+
+s='durga'
+print('d' in s)
+print('z' in s)
+
+
+
+
+s='durgasoft'
+substring='durga'
+if subs in s:
+       print("found")
+else:
+       print("not found")
+
+#in genranal == opertor always meant for content comparision
+ is opertor meant for reference comparision
+
+
+
+#unicode.org to get infromation about unicode
+
+city=input("Enter city")
+list=['abc','cdf','ggg','fsd']
+if city.strip in list:
+       print("City present")
+else:
+       print("City not preset")
+
+-----------------------------------------------------------
+
+lstrip() - it is remove the space of begin of string
+rstrip() - it is remove the space of end of string
+strip() - to remove the space from begin or end of string
+-----------------------------------------------------------------
+list and tuple
+-------------
+list is mutable and tuple immutable
+list order is preserve
+
+list vs set ---->duplicate not allowed in set
+
+---------------------------------------------
+
+Traversing elements of a list:
+=============================
+
+l=[10,20,30,40]
+i=0
+while i<len(l):
+      print(l[i]) 
+      i=i+1
+
+#10 20 30 40
+
+for x in l:
+      print(x)
+#10 20 30 40
+
+Importance functions of list:-
+================================
+
+# To get the information about the list
+1.len()
+2.count()
+ l=[1,1,1,2,2,3,3]
+ print(l.count(1))
+  ========>3
+
+3.index()
+  l.index(6) ===> not avaible then value error
+
+Manipulating list element:
+----------------------------
+1. append() method always going to add element at last 
+
+2. insert() method add element in the middle... specified location 
+   l=[1,2,3,4,5]
+   l.insert(1,888)
+   print(l) ===> [1,888,2,3,4,5]
+
+   Special Condition :
+   l.insert(30,888)
+   l.insert(-30,777)
+   print(l)====> [777,1,2,3,4,5,888]
+
+3. extends() :
+   l1=[1,2,3] 
+   l2=[4,5,6]
+   l1.extends.l2
+   print(l1) ===> [1,2,3,4,5,6]
+   print(l2) ===> [4,5,6]
+
+4.remove() to element of list
+  l=[1,2,1,3]  
+  l.remove(1) -- Removing values must preset in the list.. otherwise will get erro ... value is not in list
+  print(l) =====>[2,1,3] 
+  pop() : remove last element of list
+
+  print(l.pop()) ====>3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
